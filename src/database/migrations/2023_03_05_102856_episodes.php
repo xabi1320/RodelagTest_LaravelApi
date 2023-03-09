@@ -19,7 +19,7 @@ return new class extends Migration
             $table->bigIncrements('id')->unsigned();
             $table->string('episode', 255);
             $table->string('name', 255);
-            $table->string('characters', 500);
+            $table->mediumText('characters');
             $table->timestamps();
             $table->softDeletes();
         });
