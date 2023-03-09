@@ -5,6 +5,8 @@ This API is contracted in Laravel with its framework lumen. It is inside an envi
 
 ## Previous steps
 
+- First copy and paste file `.env.example` and rename to `.env`
+- With CLI go to directory `src`  and Install dependencies with this command `composer install` (You need to have composer installed)
 - Run docker with this command `docker-compose up -d`
-- With CLI go to directory `src` and run migrations with this command `docker-compose exec php php /var/www/html/artisan migrate`
+- With CLI inside directory `src` run migrations with this command `docker-compose exec php php /var/www/html/artisan migrate`
 - Go to `localhost:8888/v1/episode/list`
